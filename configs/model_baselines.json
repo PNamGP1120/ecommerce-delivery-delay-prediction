@@ -1,0 +1,20 @@
+{
+  "primary_metric": "pr_auc",
+  "secondary_metrics": [
+    "roc_auc",
+    "recall",
+    "precision",
+    "f1"
+  ],
+  "default_threshold": 0.5,
+  "threshold_selection": "best_validation_f1",
+  "model_selection_split": "validation",
+  "final_evaluation_split": "test",
+  "models": [
+    "dummy_prior",
+    "logistic_regression",
+    "decision_tree",
+    "random_forest",
+    "hist_gradient_boosting"
+  ]
+}
