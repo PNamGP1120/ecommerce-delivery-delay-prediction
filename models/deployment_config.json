@@ -1,0 +1,38 @@
+{
+  "model": {
+    "candidate": "xgboost_03",
+    "family": "xgboost",
+    "sha256": "ef4eeafce0e56b810073d84ac99eec7df71af6a6e7f155823b6ce7327b4b1bfa",
+    "feature_count": 41
+  },
+  "risk_score": {
+    "semantics": "Positive-class model score used for ranking risk. It is not a calibrated late-delivery probability.",
+    "calibrated_probability": false,
+    "risk_band_source": "development temporal OOF score quantiles",
+    "bands": {
+      "low_max": 0.38887956738471985,
+      "medium_max": 0.5911779403686523,
+      "high_max": 0.771765947341919
+    },
+    "action_threshold": 0.5259515643119812,
+    "action_threshold_rule": "maximize_precision_subject_to_recall>=0.50",
+    "warning": "Phase 5 showed temporal threshold instability and poor calibration. Treat requires_review as a configurable operational policy, not a probability guarantee."
+  },
+  "monitoring_reference": {
+    "source": "best_tuned_oof_predictions.parquet",
+    "rows": 40991,
+    "prevalence": 0.10080261520821644,
+    "score_mean": 0.41111838817596436,
+    "score_std": 0.19710193574428558,
+    "score_quantiles": {
+      "q05": 0.12004408240318298,
+      "q25": 0.2617606371641159,
+      "q50": 0.38887956738471985,
+      "q75": 0.5456182360649109,
+      "q80": 0.5911779403686523,
+      "q90": 0.6972976326942444,
+      "q95": 0.771765947341919,
+      "q99": 0.8654272377490997
+    }
+  }
+}

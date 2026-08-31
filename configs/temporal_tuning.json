@@ -1,0 +1,26 @@
+{
+  "phase": "4B",
+  "development_data": [
+    "data/processed/train.parquet",
+    "data/processed/validation.parquet"
+  ],
+  "excluded_from_tuning": "data/processed/test.parquet",
+  "temporal_cv": {
+    "n_splits": 4,
+    "initial_train_fraction": 0.5,
+    "strategy": "custom_expanding_window_by_event_order"
+  },
+  "primary_metric": "mean_pr_auc",
+  "tie_break": "lower_std_pr_auc",
+  "model_families": [
+    "logistic_regression",
+    "random_forest",
+    "hist_gradient_boosting",
+    "xgboost"
+  ],
+  "threshold_rules": [
+    "best_oof_f1",
+    "maximize_precision_subject_to_recall>=0.50"
+  ],
+  "test_policy": "Phase 4B does not use the original test split by default because it was already opened in Phase 4A."
+}

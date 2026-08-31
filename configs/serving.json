@@ -1,0 +1,22 @@
+{
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "max_batch_size": 500
+  },
+  "model_artifact": "models/best_tuned_candidate.joblib",
+  "metadata": "models/best_tuned_candidate_metadata.json",
+  "deployment_config": "models/deployment_config.json",
+  "score_semantics": "uncalibrated risk ranking score",
+  "prediction_point": "order_approved_at",
+  "feature_contract": "41 Phase 3 model features",
+  "monitoring": [
+    "request_count",
+    "prediction_count",
+    "latency",
+    "risk_score_mean",
+    "review_rate",
+    "risk_band_distribution",
+    "missing_feature_values"
+  ]
+}

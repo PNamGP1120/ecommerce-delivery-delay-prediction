@@ -1,0 +1,7 @@
+relationship,child_rows_non_null,unknown_fk_rows,unknown_fk_unique_values,integrity_ok
+orders.customer_id → customers.customer_id,99441,0,0,True
+order_items.order_id → orders.order_id,112650,0,0,True
+order_items.product_id → products.product_id,112650,0,0,True
+order_items.seller_id → sellers.seller_id,112650,0,0,True
+payments.order_id → orders.order_id,103886,0,0,True
+reviews.order_id → orders.order_id,99224,0,0,True

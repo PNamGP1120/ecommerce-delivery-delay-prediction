@@ -1,0 +1,9 @@
+step,orders,retained_pct
+Raw orders,99441,100.0
+Delivered,96478,97.02034372140264
+Delivered + purchase timestamp,96478,97.02034372140264
+Delivered + prediction point,96464,97.00626502147001
+Delivered + actual delivery,96456,96.99822005007994
+Delivered + estimated delivery,96456,96.99822005007994
+Delivered + valid promised window,96450,96.9921863215374
+Final eligible population,96450,96.9921863215374

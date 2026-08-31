@@ -1,0 +1,10 @@
+rule,action,reason
+order_status must be delivered,exclude otherwise,Target represents completed delivery lifecycle.
+order_approved_at must exist,exclude if missing,Required prediction point.
+actual delivery must exist,exclude if missing,Required for target construction.
+estimated delivery must exist,exclude if missing,Required for target construction.
+approval cannot precede purchase,exclude if violated,Invalid lifecycle.
+actual delivery cannot precede purchase,exclude if violated,Invalid lifecycle.
+carrier before approval,keep + document,Carrier timestamp is post-prediction and will not be used as feature.
+delivery before carrier,investigate,Potential timestamp logging anomaly.
+estimated delivery cannot precede approval,exclude if violated,Estimated delivery date must be valid at the order_approved_at prediction point.

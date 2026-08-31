@@ -1,0 +1,23 @@
+{
+  "phase": 5,
+  "candidate": "models/best_tuned_candidate.joblib",
+  "candidate_selection_source": "Phase 4B temporal CV",
+  "test_policy": "The Phase 3 test split is used only as an observed diagnostic. It is not pristine because Phase 4A results were already observed and motivated Phase 4B. Phase 5 must not tune from test results.",
+  "analyses": [
+    "OOF ranking metrics",
+    "observed holdout ranking metrics",
+    "PR-AUC lift over prevalence",
+    "threshold trade-offs",
+    "calibration",
+    "temporal fold robustness",
+    "segment error analysis",
+    "feature drift PSI",
+    "native XGBoost importance",
+    "raw-feature permutation importance",
+    "SHAP global importance"
+  ],
+  "shap": {
+    "optional_dependency": "shap>=0.52.0",
+    "sample_size": 2000
+  }
+}

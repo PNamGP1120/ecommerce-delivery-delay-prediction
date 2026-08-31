@@ -1,0 +1,10 @@
+table,candidate_key,rows,unique_keys,duplicate_key_rows,is_unique
+orders,order_id,99441,99441,0,True
+customers,customer_id,99441,99441,0,True
+products,product_id,32951,32951,0,True
+sellers,seller_id,3095,3095,0,True
+order_items,order_id + order_item_id,112650,112650,0,True
+payments,order_id + payment_sequential,103886,103886,0,True
+reviews,review_id,99224,98410,814,False
+category_translation,product_category_name,71,71,0,True
+geolocation,geolocation_zip_code_prefix,1000163,19015,981148,False

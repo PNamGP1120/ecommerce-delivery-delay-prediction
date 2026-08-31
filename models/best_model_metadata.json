@@ -1,0 +1,10 @@
+{
+  "best_model": "random_forest",
+  "selection_metric": "pr_auc",
+  "validation_pr_auc": 0.16191444200879287,
+  "threshold_selection": "best_validation_f1",
+  "selected_threshold": 0.28781930472011696,
+  "test_pr_auc": 0.09088049825056164,
+  "test_roc_auc": 0.6299005877876453,
+  "feature_count": 41
+}

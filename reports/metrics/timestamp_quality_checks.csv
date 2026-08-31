@@ -1,0 +1,6 @@
+check,affected_rows,affected_pct
+approval_before_purchase,0,0.0
+carrier_before_approval,1359,1.366639514888225
+customer_delivery_before_carrier,23,0.02312929274645267
+customer_delivery_before_purchase,0,0.0
+estimated_delivery_before_purchase,0,0.0

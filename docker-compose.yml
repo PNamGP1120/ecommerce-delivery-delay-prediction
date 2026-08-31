@@ -1,0 +1,13 @@
+services:
+  delivery-delay-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      LOG_LEVEL: INFO
+      MODEL_PATH: models/best_tuned_candidate.joblib
+      MODEL_METADATA_PATH: models/best_tuned_candidate_metadata.json
+      DEPLOYMENT_CONFIG_PATH: models/deployment_config.json
+    restart: unless-stopped

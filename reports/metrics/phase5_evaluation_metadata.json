@@ -1,0 +1,9 @@
+{
+  "candidate": "xgboost_03",
+  "model_family": "xgboost",
+  "development_rows": 81982,
+  "test_rows": 14468,
+  "test_status": "observed_holdout_diagnostic_not_pristine",
+  "selection_policy": "No model or hyperparameter changes are made from Phase 5 test results.",
+  "shap_status": "complete"
+}

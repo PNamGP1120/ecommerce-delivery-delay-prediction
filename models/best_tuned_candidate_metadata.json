@@ -1,0 +1,25 @@
+{
+  "status": "development_candidate_not_final_holdout",
+  "best_config_id": "xgboost_03",
+  "model_family": "xgboost",
+  "params": {
+    "n_estimators": 300,
+    "max_depth": 5,
+    "learning_rate": 0.03,
+    "min_child_weight": 5,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "reg_lambda": 2.0,
+    "scale_pos_weight": "auto"
+  },
+  "selection_rule": "highest mean temporal-CV PR-AUC; lower PR-AUC std as tie-break",
+  "mean_cv_pr_auc": 0.22667279136972104,
+  "std_cv_pr_auc": 0.11449213481403754,
+  "min_cv_pr_auc": 0.10523887403920154,
+  "feature_count": 41,
+  "development_rows": 81982,
+  "development_end": "2018-06-21 11:59:03",
+  "best_oof_f1_threshold": 0.5649906396865845,
+  "recall_50_threshold": 0.5259515643119812,
+  "note": "The original test split was already opened during Phase 4A. Phase 4B therefore does not use it for tuning or default evaluation."
+}

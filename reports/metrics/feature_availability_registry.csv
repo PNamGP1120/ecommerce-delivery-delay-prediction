@@ -1,0 +1,11 @@
+column,role,available_at_prediction,reason
+order_purchase_timestamp,candidate_feature,True,Có trước order approval.
+order_approved_at,prediction_point,True,Mốc thời gian model thực hiện prediction.
+order_estimated_delivery_date,candidate_feature,True,Estimated deadline đã được xác định trước delivery.
+order_delivered_carrier_date,forbidden_feature,False,Xảy ra sau prediction point.
+order_delivered_customer_date,target_construction_only,False,Actual outcome; chỉ dùng tạo target.
+review_score,forbidden_feature,False,Post-delivery information.
+review_comment_title,forbidden_feature,False,Post-delivery information.
+review_comment_message,forbidden_feature,False,Post-delivery information.
+review_creation_date,forbidden_feature,False,Post-delivery information.
+review_answer_timestamp,forbidden_feature,False,Post-delivery information.
