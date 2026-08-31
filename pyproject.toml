@@ -1,0 +1,32 @@
+[project]
+name = "ecommerce-delivery-delay-prediction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "PNamGP1120", email = "phuongnam.it0212@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "joblib>=1.5.3",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.1",
+    "scikit-learn>=1.9.0",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+ecommerce-delivery-delay-prediction = "ecommerce_delivery_delay_prediction:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.5",
+]
